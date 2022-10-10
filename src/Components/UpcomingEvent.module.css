@@ -1,0 +1,52 @@
+.flight{
+    display:flex;
+    flex-direction: column;
+    background:transparent;
+    z-index:10;
+    box-shadow:-3px -3px 7px 2px rgb(207, 203, 203),3px 3px 7px 2px rgba(230, 223, 223, 0.993);
+    font-weight: bold;
+    border-radius:10px;
+    padding:5px;
+    color:rgb(184, 178, 178);
+    cursor:pointer;
+    margin:20px;
+    
+}
+
+table{
+    background: transparent;
+}
+
+
+.description{
+    display: flex;
+    font-size:12px;
+    background: transparent;
+    padding:2px;
+}
+
+
+
+
+
+@media only screen and (max-width:1042px) {
+  .flight{
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    color:rgb(235, 196, 225);
+    width:100%;
+    z-index:100;
+    cursor:pointer;
+    margin:20px;   
+    font-size: 30px; 
+  }
+
+  table{
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+  }
+}

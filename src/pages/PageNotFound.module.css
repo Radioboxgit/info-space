@@ -1,0 +1,35 @@
+.container{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:url('/public/error404.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    text-align: justify;
+    height:90vh;
+}
+
+.call-to-action{
+    display:inline-flex;
+    position:absolute;
+    top:370px;
+    display:inline-flex;
+    color:rgb(182, 224, 252);
+    background: rgba(15, 15, 15, 0.7);
+    box-shadow: 20px 20px 40px 6px rgba(244, 251, 252, 0.6), -20px -20px 40px 6px rgba(247, 253, 253, 0.6);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blu(2.5px);
+    border-radius: 10px;
+    margin:30px;
+    padding:10px;
+    font-size:20px;
+    cursor:pointer;
+    
+}
+
+.call-to-action:hover{
+    transform: scale(1.1);
+    box-shadow: 20px 20px 40px 6px rgba(89, 90, 90, 0.6), -20px -20px 40px 6px rgba(191, 192, 192, 0.6);
+}

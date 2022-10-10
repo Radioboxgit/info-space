@@ -1,0 +1,139 @@
+
+.parent{
+    margin:30px;
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    
+    
+}
+
+.container{
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "image details";
+    background-color: rgb(255, 255, 255);
+    padding:0;
+    border-radius: 25px;
+   
+}
+
+.image{
+    display:flex;
+    grid-area:image;
+    --xyz-perspective:800px;
+    border-radius: 25px;
+    
+    
+}
+
+.details{
+    display:flex;
+    flex-direction:column;
+    justify-items: center;
+    align-items: center;
+    grid-area:details;
+    background-color: rgb(209, 207, 207);
+    color:black;
+    --xyz-perspective:800px;
+    padding:5px;
+    border-top-right-radius:25px;
+    border-bottom-right-radius:25px;
+}
+
+.title{
+    text-transform:uppercase;
+}
+
+.takeoff{
+    display:flex;
+    flex-direction:column;
+    margin:5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.launch-image{
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius:25px;
+    border-bottom-left-radius:25px;
+}
+
+.desc{
+    color:rgb(253, 136, 2);
+    font-weight:bold;
+}
+.mission{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.mission-description{
+    padding:5px;
+    --xyz-perspective:500px;
+}
+
+.location-details{
+    display:inline-block;
+    padding:10px;
+}
+
+.data-table{
+    border-radius:25px;
+    padding:5px;
+    background-color:#362101;
+    color:#f7e2c3;
+}
+
+th, td {
+    padding: 2px;
+  }
+
+
+@media only screen and (max-width:768px) {
+    .parent{
+        margin:5px;
+    }
+    .container{
+        display:flex;
+        flex-direction:column;
+        text-align: justify;
+        text-justify: inter-character;
+       
+    }
+    .data-table{
+        display: table;
+        font-size:12px;
+        padding:5px;
+    }
+    .image{
+        border-top-left-radius:25px;
+        border-top-right-radius:25px;
+        height:300px;
+    }
+
+    .launch-image{
+        border-top-left-radius:25px;
+        border-top-right-radius:25px;
+        border-bottom-left-radius:0;
+    }
+    .details{
+        border-bottom-right-radius:25px;
+        border-bottom-left-radius:25px;
+        border-top-right-radius:0;
+        
+    }
+    .title{
+        font-size: 16px;
+    }
+    
+  }

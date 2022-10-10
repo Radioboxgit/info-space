@@ -1,0 +1,32 @@
+@import url('http://fonts.cdnfonts.com/css/led-digital-7'); 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+ 
+
+ .container{
+    display:block;
+    border-radius: 6px;
+    padding:5px;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+ }
+ .counter{
+    /* font-family: 'Digital-7', sans-serif; */
+    font-family: 'Roboto Mono', sans-serif; 
+    color:rgb(252, 4, 4);
+    font-size: 20px;
+    align-self: center;
+    font-weight: bold;
+ }
+
+
+ @media only screen and (max-width:768px) {
+   .counter{
+      font-size: 14px;
+      font-weight: bold;
+      
+   }
+ }
+                

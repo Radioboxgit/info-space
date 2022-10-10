@@ -1,0 +1,28 @@
+.container{
+    display:flex;
+    color:rgb(0, 0, 0);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('/public/cockpit.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+
+.header{
+    position:absolute;
+    color:#404247;
+    padding:10px;
+    margin-left:30px;
+}
+
+.takeoff{
+    color:black;
+    font-weight:bold;
+    padding:5px;
+
+    margin-left:5px;
+    border-radius:20px;
+}

@@ -1,0 +1,113 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.parent{
+    display:grid;
+    grid-template-columns: 12fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "news  upcoming"; 
+     background-color: rgb(7, 7, 7);
+    
+    
+}
+
+.space{
+    grid-area: news;
+    background-color: rgb(70, 67, 67);
+    border-right:2px solid rgba(211, 211, 211, 0.993);
+    
+    
+}
+
+.space-objects{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    justify-content: space-evenly;
+   
+}
+
+.pagination{
+    margin:20px;
+    border-radius:10px;
+    background:transparent;
+    outline:none;
+    color:blueviolet;
+    cursor:pointer;
+}
+
+.upcoming-launches{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    grid-area:upcoming;
+    margin-bottom:auto;
+    background:url('/public/bcg15.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+   background-position:left;
+   background-blend-mode: darken;
+   background-color: rgba(19, 1, 1, 0.7);
+   padding:5px;
+}
+
+
+
+.title{
+    color:white;
+    padding:5px;
+}
+
+.pagination{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.event-button{
+    margin-top:10px;
+    border-radius:10px;
+    font-weight: bold;
+    padding:10px;
+    cursor:pointer;
+    border:2px solid white;
+    background-color:rgb(43, 1, 1);
+    color:rgb(241, 255, 253);
+}
+
+.event-button:hover{
+    transform:scale(1.02);
+}
+
+.event-button:disabled{
+    transform:scale(1);
+    background-color:grey;
+}
+
+@media only screen and (max-width:1042px) {
+    .parent{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .upcoming-launches{
+        display:flex;
+        background:url('/public/cockpit3.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.9);
+        background-blend-mode: darken;
+        padding:25px;
+        background-attachment: fixed;
+        
+        
+       
+    }
+ 
+}

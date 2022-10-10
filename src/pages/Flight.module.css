@@ -1,0 +1,56 @@
+.parent{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(66, 65, 65);
+    padding:50px;
+}
+
+.banner{
+    margin:20px;
+    color:rgb(252, 198, 128);
+    font-weight: bold;
+    font-size:20px;
+    text-transform: uppercase;
+}
+
+.pagination{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.event-button{
+    margin-top:10px;
+    border-radius:10px;
+    font-weight: bold;
+    padding:10px;
+    cursor:pointer;
+    border:2px solid white;
+    background-color:rgb(1, 43, 36);
+    color:rgb(241, 255, 253);
+    margin-bottom:10px;
+}
+
+.event-button:hover{
+    transform:scale(1.02);
+}
+
+.event-button:disabled{
+    transform:scale(1);
+    background-color:grey;
+}
+
+@media only screen and (max-width:768px) {
+    .banner{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size:18px;
+       
+    }
+    .parent{
+        padding:5px;
+    }
+}

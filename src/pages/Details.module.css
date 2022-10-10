@@ -1,0 +1,164 @@
+
+.container{
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    width:100%;
+    padding:50px;
+    background-color:rgb(2, 59, 59);
+   
+    
+   
+}
+.notification{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#ffdddd;
+    background-color: black;
+}
+
+.image-container{
+    display:flex;
+    grid-area:image;
+    --xyz-perspective:800px;
+    width:50%;
+    height:600px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding:5px;
+    background-color: rgb(255, 255, 255); 
+}
+
+.details{
+    display:flex;
+    flex-direction:column;
+    justify-items: center;
+    align-items: center;
+    grid-area:details;
+    background-color: rgb(209, 207, 207);
+    color:black;
+    --xyz-perspective:800px;
+    padding:20px;
+    width:50%;
+    height:600px;
+    text-align: justify;
+    font-weight:600;
+   
+}
+
+.title{
+    text-transform:uppercase;
+}
+
+.takeoff{
+    display:flex;
+    flex-direction:column;
+    margin:5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.launch-image{
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+
+    
+}
+
+.desc{
+    color:rgb(110, 60, 2);
+    font-weight:bold;
+}
+.mission{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top:20px;
+}
+
+.mission-description{
+    padding:5px;
+    --xyz-perspective:500px;
+}
+
+.location-details{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top:20px;
+    overflow: auto;
+}
+
+
+
+
+.data-table{
+    color:#291901;
+    font-weight:bolder;
+   
+}
+
+th, td {
+    padding:10px 25px 10px 25px;
+    white-space: normal;
+  }
+
+
+@media only screen and (max-width:920px) {
+    .container{
+        display:flex;
+        flex-direction:column;
+        text-align: justify;
+        text-justify: inter-character;
+        padding:10px;
+    }
+
+    .data-table{
+        display: table;
+        padding:5px;
+    }
+    .image-container{
+        border-top-left-radius:25px;
+        border-top-right-radius:25px;
+        height:500px;
+        width:100%;
+        border-bottom-left-radius: 0;
+    }
+
+    .launch-image{
+        border-top-left-radius:25px;
+        border-top-right-radius:25px;
+        width:100%;
+    }
+    .details{
+        border-bottom-right-radius:25px;
+        border-bottom-left-radius:25px;
+        width:100%;
+        font-weight: 400;
+       
+        
+    }
+    .title{
+        font-size: 16px;
+    }
+
+    .location-details{
+        margin-top:15px;
+        display:flex;
+        padding:5px;
+        
+    }
+    
+    .mission{
+        margin-top:10px;
+        min-width: 0;
+    }
+    
+  }

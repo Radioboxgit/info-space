@@ -10,6 +10,12 @@
     font-weight:bold;
 }
 
+.copy{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width:570px) {
     .container{
         font-size:12px;

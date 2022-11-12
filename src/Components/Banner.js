@@ -17,8 +17,8 @@ export default function Banner(){
             </div>
             <div className={styles['banner-welcome']}>
                 <div className={styles['message']}>
-                    <h2>Welcome to iNFOSPACE, the home of spacetainment</h2>
-                    <p>Space Exploration is our passion. Space News is our obsession.</p>
+                    <h2>Welcome to iNFOSPACE, the home of Spacetainment</h2>
+                    <p>Space Exploration is Our passion, Space News is Our Obsession.</p>
                     <div>
                         <a target="_blank" rel="noreferrer" href="https://twitter.com/AnigboguNedu"><FaTwitter style={ {color: "#b0aafd","fontSize":"30px","margin":"3px" }}/> </a>
                         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/chinedu-anigbogu-62ab74188"><FaLinkedinIn style={ { color: "#6358fd","fontSize":"30px","margin":"3px"}}/> </a> 

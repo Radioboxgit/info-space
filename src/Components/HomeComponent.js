@@ -62,7 +62,11 @@ export default function HomeComponent(){
             
         }
     } 
-   
+    const sortByDate=(a,b)=>{
+        if (a.takeOff < b.takeOff ){ return -1;}
+        if (a.takeOff  > b.takeOff ){ return 1;}
+        return 0;
+    }
 
     return (
         <div>
@@ -81,7 +85,7 @@ export default function HomeComponent(){
                 </div> 
                 <div className={styles['upcoming-launches']}> 
                     <h2 className={styles['title']}><FaSpaceShuttle  style={{"color":"#ff7f50","transform": 'rotate(-90deg)'}}/> LAUNCHING SOON  <FaSpaceShuttle  style={{"color":"#ff7f50","transform": 'rotate(-90deg)'}}/></h2> 
-                    { events && events._items.slice(0,6).map((e) =><UpcomingEvent key={e.key} event={e}/>)}
+                    { events && events._items.slice(0,6).sort(sortByDate).map((e) =><UpcomingEvent key={e.key} event={e}/>)}
                 </div>
             </div>
             }

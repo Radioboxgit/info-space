@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# WELCOME TO iNFOSPACE, a blog site dedicated to providing information about space exploration. iNFOSPACE has everything you need to satiate your curiosity, from news and reviews to educational materials and more. Keep up with the latest space news/discoveries and explore the cosmos with iNFOSPACE news.‍
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Space is our passion, Space news is our obsession.
+
+# Why iNFOSPACE?
+Space travel has been one of man's greatest marvels. It has changed the way we perceive the world as we know it today, and given us new knowledge about the Universe around us. From the brightest stars in the universe to the deepest reaches of space, INFO-SPACE will take you on a journey through the splendor of this fascinating Universe. With INFO-SPACE diverse range of contents, you're sure to find everything you need to feel right at home in this exciting universe. As we all know, Space is an incredible frontier that is always pushing boundaries and making advancements. We're excited to see what new discoveries are, and we hope you will be too. From informative articles to videos, INFO-SPACE offer something for everyone as they explore all that space has to offer. And don't worry – we'll keep things fun and interesting with an array of entertaining content tailored for your needs. Stay up-to-date on the latest space news and discover the universe through our curated news content. Space is our passion, Space news is our obsession. We are dedicated to bringing you the latest information about all things related to outer space in an engaging manner that educates while entertaining at the same time. So what are you waiting for? Join us on our journey through outer space today!
+
+### WE ARE THE HOME OF SPACETAINMENT!!
 
 ## Available Scripts
 
@@ -11,60 +16,3 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

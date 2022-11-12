@@ -17,7 +17,7 @@ export default function Banner(){
             </div>
             <div className={styles['banner-welcome']}>
                 <div className={styles['message']}>
-                    <h2>Welcome to iNFOSPACE, the home of Spacetainment</h2>
+                    <h2>Welcome to iNFOSPACE</h2>
                     <p>Space Exploration is Our passion, Space News is Our Obsession.</p>
                     <div>
                         <a target="_blank" rel="noreferrer" href="https://twitter.com/AnigboguNedu"><FaTwitter style={ {color: "#b0aafd","fontSize":"30px","margin":"3px" }}/> </a>

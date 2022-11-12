@@ -9,30 +9,30 @@ export default function Flights(){
     let events= useEventStore((state)=>state.events)
     const itemsPerPage=6;
     const totalItems=(events === undefined || events.length===0) ? 0 : events._items.length
-    console.log(`total items :${totalItems}`)
+    // console.log(`total items :${totalItems}`)
 
     const totalPages=Math.ceil(totalItems/itemsPerPage)
 
-    console.log(`total pages :${totalPages}`)
+    // console.log(`total pages :${totalPages}`)
     
     let pageno=isNaN(parseInt(searchParams.get("page")) ) ? 1 : parseInt(searchParams.get("page")) > totalPages ? 1 : parseInt(searchParams.get("page")) 
 
-    console.log(`pageno :${pageno}`)
+    // console.log(`pageno :${pageno}`)
 
 
     const [currentPage, setCurrentPage] =useState(()=>pageno);
    useEffect( ()=> {setCurrentPage(pageno)}, [pageno])
-    console.log(`current page:${currentPage}`)
+    // console.log(`current page:${currentPage}`)
     let start=currentPage*itemsPerPage - itemsPerPage
-    console.log(`start :${start}`)
+    // console.log(`start :${start}`)
     let end= start + itemsPerPage
-    console.log(`end :${end}`)
+    // console.log(`end :${end}`)
 
   
    
     window.onpopstate = function () {
         window.location.reload()
-        console.log(window.location)
+        // console.log(window.location)
     };
 
     const Prev=()=>{

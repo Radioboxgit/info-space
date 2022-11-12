@@ -5,9 +5,13 @@
     justify-content: center;
     height:150px;
     margin-bottom: 2px;
-    background-color: rgb(8, 8, 8);
     box-shadow: 0 -3px 7px 2px rgba(211, 211, 211, 0.993), 0 3px 7px 2px rgba(102, 102, 102, 0.993);
     text-align: justify;
+    background: linear-gradient(to bottom, rgba(174, 174, 175, 0.2), rgba(8, 8, 8, 0.43)),url('/public/night_sky.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .banner-heading{
@@ -51,6 +55,7 @@
     text-align: justify;
     font-size: large;
     font-weight: bold;
+   
 
 }
 

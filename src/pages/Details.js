@@ -10,11 +10,11 @@ export default function  Details(){
     let events= useEventStore((state)=>state.events)
     const { id } = useParams()
     const event= (events !== undefined )? events._items.filter((e)=>e.key===id)[0]: null
-    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+    // const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
 
     return ( 
     <div className={styles.parent}>
-        <p>{vw}</p>
+        {/* <p>{vw}</p> */}
         { (events !== undefined ) ?  
         <div className={styles.container} >
             <XyzTransition appear duration="auto"> 

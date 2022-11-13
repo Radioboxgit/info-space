@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400&display=swap');
+
+
+
+
+
 .banner-welcome{
     display: flex;
     flex-direction: column;
@@ -11,6 +19,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+   
 
 }
 
@@ -55,8 +64,13 @@
     text-align: justify;
     font-size: large;
     font-weight: bold;
-   
-
+    font-family: 'Berkshire Swash', monospace;
+}
+.message>p{
+    color:rgb(250, 208, 144);
+    font-family: 'Caveat', monospace;
+    font-weight:bold;
+    font-size:25px;
 }
 
 
@@ -68,6 +82,11 @@
         margin:5px;
     
     }
+.message>p{
+    font-size:14px;
+    font-weight:bolder;
+}
+
     .banner-link{
         font-size:14px;
     }

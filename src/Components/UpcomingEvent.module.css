@@ -12,6 +12,17 @@
     margin:20px;
     
 }
+.flight:hover{
+  box-shadow:-3px -3px 7px 2px rgb(253, 156, 156),3px 3px 7px 2px rgba(88, 1, 49, 0.993);
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .flight:hover {
+    box-shadow:-3px -3px 7px 2px rgb(253, 156, 156),3px 3px 7px 2px rgba(88, 1, 49, 0.993);
+  }
+}
+
+
 
 table{
     background: transparent;

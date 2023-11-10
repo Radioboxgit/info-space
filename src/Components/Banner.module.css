@@ -9,24 +9,21 @@
 .banner-welcome{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height:150px;
+    height:450px;
     margin-bottom: 2px;
     box-shadow: 0 -3px 7px 2px rgba(211, 211, 211, 0.993), 0 3px 7px 2px rgba(102, 102, 102, 0.993);
     text-align: justify;
     background: linear-gradient(to bottom, rgba(174, 174, 175, 0.2), rgba(8, 8, 8, 0.43)),url('/public/night_sky.jpg');
-    background-position: center;
+    background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
-   
-
+    background-attachment: fixed;
 }
 
 .banner-heading{
     display:flex;
     align-items: center;
-    background-color: rgb(247, 221, 221);
+    background-color:transparent;
 }
 
 .banner-link{
@@ -37,6 +34,7 @@
     align-self:flex-end;
     gap:10px;
     margin-left: auto;
+    color:white;
 }
 
 .logo{
@@ -65,25 +63,50 @@
     font-size: large;
     font-weight: bold;
     font-family: 'Berkshire Swash', monospace;
+    
 }
 .message>p{
     color:rgb(250, 208, 144);
     font-family: 'Caveat', monospace;
-    font-weight:bold;
-    font-size:25px;
+    font-weight:bolder;
+    font-size:50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.message>div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    align-self:first baseline;
+    margin-top:20px;
 }
 
+
+@media only screen and (max-width:1120px) {
+    .message>p{
+        font-size:30px;
+        font-weight:bolder;
+    }
+}
 
 @media only screen and (max-width:768px) {
     .message{
         padding:5px;
         text-align: justify;
         font-size:12px;
-        margin:5px;
-    
+        margin:5px; 
     }
+
+    .message>h2{
+        margin-top:20px;
+        font-size:25px;
+        font-weight:bolder;
+    }
+    
+
 .message>p{
-    font-size:14px;
+    font-size:15px;
     font-weight:bolder;
 }
 

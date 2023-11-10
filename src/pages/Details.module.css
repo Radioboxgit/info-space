@@ -5,10 +5,57 @@
     align-items: center;
     width:100%;
     padding:50px;
-    background-color:rgb(2, 59, 59);
+    background-color:rgb(2, 2, 2);
+}
+
+.status >span {
+    position:absolute;
+    top:-80px;
+    right:-250px;
+    display: none;
+    padding: 6px;
+    color: rgb(0, 0, 0);
+    font-weight:bolder;
+    border-radius: 10px;
+    background-color: rgb(252, 161, 188);
+  }
+  
+
+.status{
+    border-radius: 50%;
+    padding:4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    cursor:help;
+  }
+
+.go {
+    background-color: green;
+  }
+  
+
+.notgo  {
+    background-color: red;
+  }
+
+  .status:hover span {
+    display: block;
+  }
+
+
+.heading{
+    background-color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    padding:10px;
    
     
-   
 }
 .notification{
     display:flex;
@@ -80,6 +127,7 @@
     justify-items: center;
     align-items: center;
     margin-top:20px;
+    overflow: auto;
 }
 
 .mission-description{
@@ -108,6 +156,18 @@
 th, td {
     padding:10px 25px 10px 25px;
     white-space: normal;
+  }
+
+
+  @media only screen and (max-width:420px) {
+    .status >span {
+        top:-60px;
+        font-size:12px;
+        right:-100px;
+        display:none;
+        
+      }
+
   }
 
 
@@ -161,4 +221,6 @@ th, td {
         min-width: 0;
     }
     
+
+  
   }

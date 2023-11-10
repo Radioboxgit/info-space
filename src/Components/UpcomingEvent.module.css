@@ -9,7 +9,7 @@
     padding:5px;
     color:rgb(184, 178, 178);
     cursor:pointer;
-    margin:20px;
+    margin:50px 20px;
     
 }
 .flight:hover{
@@ -20,6 +20,11 @@
   .flight:hover {
     box-shadow:-3px -3px 7px 2px rgb(253, 156, 156),3px 3px 7px 2px rgba(88, 1, 49, 0.993);
   }
+}
+
+td, h6 {
+  vertical-align:baseline; /* Align content at the top of the cell */
+ 
 }
 
 
@@ -35,9 +40,6 @@ table{
     background: transparent;
     padding:2px;
 }
-
-
-
 
 
 @media only screen and (max-width:1042px) {

@@ -4,10 +4,10 @@ import { useNavigate } from 'react-router-dom'
 
 
 export default function UpcomingEvent(props){
-    const {key,title,launchPad,location,takeOff} = props.event
+    const {id,name,pad_location_name,net} = props.event
     const navigate=useNavigate()
     const goToEvent=()=>{
-        navigate(`/flights/${key}`)
+        navigate(`/flights/${id}`)
     }
     return (
         <div onClick={goToEvent} className={styles['flight']}>
@@ -15,15 +15,15 @@ export default function UpcomingEvent(props){
             <tbody>
                 <tr>
                     <td><h6>FLIGHT:</h6></td>
-                    <td className={styles['description']}>{title}</td>
+                    <td className={styles['description']}>{name}</td>
                 </tr> 
                 <tr>
                     <td><h6>LOCATION:</h6></td>
-                    <td  className={styles['description']}>{launchPad +','+ location}</td>
+                    <td  className={styles['description']}>{pad_location_name}</td>
                 </tr> 
                 <tr>
                     <td><h6>TAKEOFF:</h6></td>
-                    <td  className={styles['description']}>{new Date(takeOff).toString()}</td>
+                    <td  className={styles['description']}>{new Date(net).toString()}</td>
                 </tr> 
             </tbody>
         </table>

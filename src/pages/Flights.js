@@ -1,6 +1,6 @@
 import styles from './Flight.module.css'
 import { useEventStore } from '../store/EventStore'
-import ParentCard from '../Components/ParentCardComponenet';
+import ParentCard from '../Components/ParentCardComponent';
 import { useState, useEffect } from  'react'
 import { useSearchParams } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ export default function Flights(){
     const [searchParams, setSearchParams] = useSearchParams();
     let events= useEventStore((state)=>state.events)
     const itemsPerPage=6;
-    const totalItems=(events === undefined || events.length===0) ? 0 : events._items.length
+    const totalItems=(events === undefined || events.length===0) ? 0 : events.length
     // console.log(`total items :${totalItems}`)
 
     const totalPages=Math.ceil(totalItems/itemsPerPage)

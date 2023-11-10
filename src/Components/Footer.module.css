@@ -17,6 +17,10 @@
     gap:3px;
 }
 
+
+.copy>a{
+    color:rgb(193, 193, 253);
+}
 @media only screen and (max-width:570px) {
     .container{
         font-size:12px;

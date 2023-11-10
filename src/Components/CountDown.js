@@ -19,7 +19,11 @@ const getEpoch =() =>{
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        setEpoch(`${days} Days: ${hours} Hours: ${minutes} Minutes: ${seconds} Seconds`)
+        const days_string = (days>1) ? 'Days':'Day'
+        const hour_str = (hours>1) ? 'Hours':'Hour'
+        const min_str = (minutes>1) ? 'Minutes':'Minute'
+        const sec_str = (seconds>1) ? 'Seconds':'Second'
+        setEpoch(`${days} ${days_string}: ${hours} ${hour_str}: ${minutes} ${min_str}: ${seconds}  ${sec_str}`)
     }
 }
 const myInterval=setInterval(getEpoch,1000);

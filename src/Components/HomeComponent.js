@@ -63,8 +63,8 @@ export default function HomeComponent(){
         }
     } 
     const sortByDate=(a,b)=>{
-        if (a.takeOff < b.takeOff ){ return -1;}
-        if (a.takeOff  > b.takeOff ){ return 1;}
+        if (a.net < b.net ){ return -1;}
+        if (a.net  > b.net ){ return 1;}
         return 0;
     }
 
@@ -75,17 +75,19 @@ export default function HomeComponent(){
             {data &&
             <div className={styles.parent}>
                 <div  className={styles.space}>
+                <h2 className={styles['heading']}>Top News:</h2>
                     <div className={styles['space-objects']}> 
                         {data && data.slice(start,end).map((e) =><BlogCard key={e.id} article={e}/>)}
                     </div>
                     <div className={styles['pagination']}>
-                    <button className={styles['event-button']} disabled={(currentPage ===1)} onClick={Prev} > {`<< PREV`} </button> 
-                    <button className={styles['event-button']} disabled={(currentPage === totalPages)} onClick={Next} > {`MORE NEWS >>`} </button> 
-                </div>
+                        <button className={styles['event-button']} disabled={(currentPage ===1)} onClick={Prev} > {`<< PREV`} </button> 
+                        <button className={styles['event-button']} disabled={(currentPage === totalPages)} onClick={Next} > {`MORE NEWS >>`} </button> 
+                    </div>
                 </div> 
                 <div className={styles['upcoming-launches']}> 
                     <h2 className={styles['title']}><FaSpaceShuttle  style={{"color":"#ff7f50","transform": 'rotate(-90deg)'}}/> LAUNCHING SOON  <FaSpaceShuttle  style={{"color":"#ff7f50","transform": 'rotate(-90deg)'}}/></h2> 
-                    { events && events._items.slice(0,6).sort(sortByDate).map((e) =><UpcomingEvent key={e.key} event={e}/>)}
+                    { events && events.slice(0,6).sort(sortByDate).map((e) =><UpcomingEvent key={e.id} event={e}/>)}
+                    {/* {JSON.stringify(events, null, 2) } */}
                 </div>
             </div>
             }

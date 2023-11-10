@@ -24,8 +24,8 @@
 
  @media only screen and (max-width:768px) {
    .counter{
-      font-size: 14px;
-      font-weight: bold;
+      font-size: 15px;
+      font-weight: bolder;
       
    }
  }

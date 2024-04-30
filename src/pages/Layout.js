@@ -34,7 +34,7 @@ export default function Layout(){
                 pad_location_name: result?.pad?.location?.name,
                 pad_country_code: result?.pad?.country_code,
               }));
-              console.log(results)
+              // console.log(results)
               //save the data
             populateEvents(results)
           }

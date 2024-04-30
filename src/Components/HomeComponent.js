@@ -13,13 +13,13 @@ import { useSearchParams } from 'react-router-dom';
 export default function HomeComponent(){
     let events= useEventStore((state)=>state.events)
     // article fetching:
-    const URL='https://api.spaceflightnewsapi.net/v3/articles?_limit=200'
+    const URL='https://api.spaceflightnewsapi.net/v4/articles/?limit=200'
     const { isLoading, error, data } = useCustomizedFetch(URL);
     let checkError = !data ? error :false
     const [searchParams, setSearchParams] = useSearchParams();
     const itemsPerPage=8;
-
-    const totalItems=(data === undefined ) ? 0 : data.length
+    // console.log("data",data?.results)
+    const totalItems=(data === undefined ) ? 0 : data?.results.length
     // console.log(`total items :${totalItems}`)
 
     const totalPages=Math.ceil(totalItems/itemsPerPage)
@@ -77,7 +77,7 @@ export default function HomeComponent(){
                 <div  className={styles.space}>
                 <h2 className={styles['heading']}>Top News:</h2>
                     <div className={styles['space-objects']}> 
-                        {data && data.slice(start,end).map((e) =><BlogCard key={e.id} article={e}/>)}
+                        {data && data['results'].slice(start,end).map((e) =><BlogCard key={e.id} article={e}/>)}
                     </div>
                     <div className={styles['pagination']}>
                         <button className={styles['event-button']} disabled={(currentPage ===1)} onClick={Prev} > {`<< PREV`} </button> 
